@@ -41,7 +41,7 @@ export default function Home() {
         <h1>Hello!</h1>
 
         <p>
-          I’m <span className="font-bold text-white">Mertcan Çezik</span>, a
+          I’m <span className="font-bold">Mertcan Çezik</span>, a
           developer focused on building <span className="font-bold">games</span>{" "}
           and <span className="font-bold">user-friendly</span> apps.
         </p>
@@ -65,7 +65,7 @@ export default function Home() {
         </p>
       </section>
       <section className="flex flex-col p-8 md:p-20 xl:p-40 space-y-5 h-fit justify-around">
-        <h2 className="font-black text-4xl ">BACKGROUND</h2>
+        <h2 className="font-black text-4xl text-rose-500 dark:text-rose-400 bg-[var(--color-foreground)] w-fit">BACKGROUND</h2>
         <p>
           I am a <span className="font-bold">game and software developer</span>{" "}
           based in Türkiye with a background in
@@ -83,7 +83,7 @@ export default function Home() {
         <p>
           I have worked across platforms and technologies including
           <span className="font-bold"> Unity</span>,{" "}
-          <span className="font-bold">Phaser</span>,
+          <span className="font-bold">Phaser.js</span>,
           <span className="font-bold"> Node.js</span>,{" "}
           <span className="font-bold">Prisma</span>,
           <span className="font-bold"> Firebase</span>, and{" "}
@@ -102,64 +102,71 @@ export default function Home() {
         </p>
       </section>
       <section className="flex flex-col py-8 px-8 md:px-20 xl:px-40 h-fit">
-        <h2 className="font-black text-4xl">SKILLS</h2>
-        <div className="w-full text-sm md:text-xl grid grid-cols-2 lg:grid-cols-4 space-y-5 space-x-5 mt-5">
+        <h2 className="font-black text-4xl text-rose-500 dark:text-rose-400 bg-[var(--color-foreground)] w-fit">SKILLS</h2>
+        <div className="w-full text-lg md:text-xl grid grid-cols-2 lg:grid-cols-5 space-y-5 space-x-5 mt-5">
           <div className="flex flex-col">
-            <span className="font-black h-16 items-center flex mb-5 w-1">
-              GAMING & INTERACTIVE
+            <span className="font-black h-16 items-center flex mb-5 w-1 text-amber-500 dark:text-amber-400">
+              Game & Interactive
             </span>
             <span className="font-bold">Unity</span>
-            <span className="font-bold">Phaser</span>
-            <span>PixiJS</span>
+            <span className="font-bold">Phaser.js</span>
+            <span>Pixi.js</span>
             <span>Three.js</span>
             <span>Unreal Engine</span>
+            <span>WebGL</span>
+            <span>Oculus Quest </span>
+            <span>HoloLens </span>
             <span>HTC Vive</span>
-            <span>Oculus Quest 2</span>
-            <span>HoloLens 2</span>
           </div>
           <div className="flex flex-col">
-            <span className="font-black h-16 items-center flex mb-5">
-              BACKEND
+            <span className="font-black h-16 items-center flex mb-5 w-1 text-amber-500 dark:text-amber-400">
+              Backend
             </span>
             <span className="font-bold">Node.js</span>
-            <span>Express.js</span>
             <span>NestJS</span>
-            <span>Prisma</span>
+            <span>Express.js</span>
             <span className="font-bold">ASP.NET</span>
+            <span>Firebase</span>
+            <span>Prisma</span>
             <span>Entity Framework</span>
-            <span>MySQL</span>
-            <span>PostgreSQL</span>
-            <span>MongoDB</span>
-            <span>Redis</span>
           </div>
           <div className="flex flex-col">
-            <span className="font-black h-16 items-center flex mb-5">
-              FRONTEND
+            <span className="font-black h-16 items-center flex mb-5 w-1 text-amber-500 dark:text-amber-400">
+              Frontend
             </span>
             <span className="font-bold">Next.js</span>
-            <span className="font-bold">Tailwind</span>
-            <span>WebGL</span>
+            <span>Tailwind CSS</span>
+            <span>HTML5</span>
             <span className="font-bold">Ionic</span>
-            <span>HTML5 / CSS3</span>
             <span>GSAP</span>
           </div>
           <div className="flex flex-col">
-            <span className="font-black h-16 items-center flex mb-5">
-              TOOLS
+            <span className="font-black h-16 items-center flex mb-5 w-1 text-amber-500 dark:text-amber-400">
+              Database & Devops
             </span>
             <span className="font-bold">Docker</span>
-            <span>Jira</span>
-            <span>Azure Boards</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span className="font-bold">Firebase</span>
+            <span className="font-bold">Redis</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
+            <span>NoSQL</span>
             <span>AWS</span>
             <span>Azure</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="font-black h-16 items-center flex mb-5 w-1 text-amber-500 dark:text-amber-400">
+              Languages
+            </span>
+            <span className="font-bold">TypeScript</span>
+            <span className="font-bold">JavaScript</span>
+            <span className="font-bold">C#</span>
+            <span>Go</span>
+            <span>Python</span>
           </div>
         </div>
       </section>
       <section className="flex flex-col p-8 md:p-20 space-y-5 justify-around">
-        <h2 className="font-black text-4xl">FEATURED PROJECTS</h2>
+        <h2 className="font-black text-2xl sm:text-4xl text-rose-500 dark:text-rose-400 bg-[var(--color-foreground)] w-fit">FEATURED PROJECTS</h2>
         <div className="w-full flex flex-col space-y-5 border-b-1">
           <div className="flex pb-2">
             <div className="w-full md:flex justify-center items-center hidden p-5">
@@ -254,11 +261,11 @@ export default function Home() {
                 />
               </div>
               <p className=" italic mb-4">
-                Multiplayer game for web with Phaser
+                Multiplayer game for web with Phaser.js
               </p>
               <ul className="list-disc list-inside space-y-2">
                 <li>
-                  Solo-developed the game using Phaser, built a WebSocket-based
+                  Solo-developed the game using Phaser.js, built a WebSocket-based
                   lobby system, and integrated Photon for in-game multiplayer
                   networking.
                 </li>
