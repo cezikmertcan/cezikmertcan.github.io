@@ -8,7 +8,7 @@ const raleWay = Raleway({
 
 export const metadata = {
   title: "Mertcan Çezik | Game & Backend Developer",
-  description: "Experienced in Unity, Phaser.js, Node.js, and React. Explore my portfolio of games, apps, and backend projects.",
+  description: "Game and backend developer who has some experience in Unity, Phaser.js, Node.js, and React.",
   keywords: [
     "Mertcan Çezik",
     "game developer",
@@ -25,14 +25,14 @@ export const metadata = {
   creator: "Mertcan Çezik",
   openGraph: {
     title: "Mertcan Çezik | Game & Backend Developer",
-    description: "Explore projects built with Unity, Phaser.js, React, and Node.js by Mertcan Çezik. Backend systems, games, and apps all in one place.",
+    description: "Game and backend developer who has some experience in Unity, Phaser.js, Node.js, and React.",
     url: "http://cezikmertcan.github.io/",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     title: "Mertcan Çezik | Game & Backend Developer",
-    description: "Portfolio of Mertcan Çezik — full stack backend and game development with Unity, Node.js, and React.",
+    description: "Game and backend developer who has some experience in Unity, Phaser.js, Node.js, and React.",
     card: "summary",
     creator: "@cezikmertcan",
   },

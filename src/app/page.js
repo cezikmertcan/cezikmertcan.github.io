@@ -89,7 +89,7 @@ export default function Home() {
           <span className="font-bold"> Firebase</span>, and{" "}
           <span className="font-bold">Ionic</span>. My projects range from WebGL
           experiences and <span className="font-bold">casual games</span> to{" "}
-          <span className="font-bold">AI-powered appliations and services</span>
+          <span className="font-bold">AI-powered applications and services</span>
           .
         </p>
 
