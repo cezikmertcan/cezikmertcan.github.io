@@ -19,7 +19,8 @@ export const metadata = {
     "React",
     "JavaScript",
     "Turkey developer",
-    "full stack"
+    "full stack",
+    "backend developer",
   ],
   authors: [{ name: "Mertcan Çezik" }],
   creator: "Mertcan Çezik",
