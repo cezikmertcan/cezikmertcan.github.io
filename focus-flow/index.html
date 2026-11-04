@@ -1,23 +1,126 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Focus Flow</title>
-    <meta name="description" content="Support, privacy, and terms for Focus Flow.">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <meta name="theme-color" content="#0d1917">
+    <title data-title="detail">Focus Flow — A gentle Pomodoro timer</title>
+    <meta name="description" data-description="detail" content="A calmer way to focus: cozy scenes, a flexible Pomodoro timer, gentle sounds, and progress that feels good to see.">
+    <meta property="og:title" content="Focus Flow — Focus gently. Rest fully.">
+    <meta property="og:description" content="A calmer way to focus with cozy scenes, gentle sounds and a flexible timer.">
+    <meta property="og:image" content="https://cezikmertcan.github.io/assets/focus-flow-icon.png">
+    <link rel="icon" type="image/png" href="/assets/focus-flow-icon.png">
+    <link rel="stylesheet" href="/assets/site.css">
+    <link rel="stylesheet" href="/assets/detail.css">
   </head>
-  <body>
-    <main class="shell">
-      <p class="eyebrow">Focus Flow</p>
-      <h1>Focus gently. Rest fully.</h1>
-      <p class="lede">A calm Pomodoro timer with cozy scenes, companions, and optional one-time Pro features.</p>
-      <p class="muted">Published by Mertcan Çezik.</p>
-      <nav class="links" aria-label="Focus Flow information">
-        <a href="/focus-flow/support/">Support</a>
-        <a href="/focus-flow/privacy/">Privacy policy</a>
-        <a href="/focus-flow/terms/">Terms of use</a>
-      </nav>
+  <body data-page="detail">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="Mertcan Çezik home" data-i18n-aria="ui.brandLabel">
+          <img src="/assets/focus-flow-icon.png" alt="">
+          <span>Mertcan Çezik</span>
+        </a>
+        <div class="header-right">
+          <nav class="top-nav" aria-label="Main navigation" data-i18n-aria="ui.navLabel">
+            <a href="/" data-i18n="nav.home">Home</a>
+            <a class="nav-download" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener" data-i18n="nav.download">App Store ↗</a>
+          </nav>
+          <div class="site-tools">
+            <label class="sr-only" id="language-select-label" for="language-select" data-i18n="ui.languageLabel">Language</label>
+            <select class="language-picker" id="language-select" data-language-picker aria-labelledby="language-select-label" aria-label="Language">
+              <option value="en">EN</option><option value="tr">TR</option><option value="es">ES</option><option value="fr">FR</option><option value="pt">PT</option>
+            </select>
+            <div class="theme-switch" role="group" aria-label="Color theme" data-i18n-aria="ui.themeLabel">
+              <button class="theme-option" type="button" data-theme-choice="light" aria-label="Light mode" data-i18n-aria="ui.lightMode" aria-pressed="false" title="Light mode" data-i18n-title="ui.lightMode">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6 16 16M16 4l-1.4 1.4M5.4 14.6 4 16"/></svg><span data-i18n="ui.light">Light</span>
+              </button>
+              <button class="theme-option" type="button" data-theme-choice="dark" aria-label="Dark mode" data-i18n-aria="ui.darkMode" aria-pressed="true" title="Dark mode" data-i18n-title="ui.darkMode">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.6 12.8A7.2 7.2 0 0 1 7.2 3.4a7.4 7.4 0 1 0 9.4 9.4Z"/></svg><span data-i18n="ui.dark">Dark</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="detail-shell">
+      <section class="detail-hero" aria-labelledby="detail-title">
+        <div class="detail-copy" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="detail.kicker">A quieter way to get things done</span></p>
+          <h1 id="detail-title"><span data-i18n="detail.title1">Focus gently.</span><br><em data-i18n="detail.title2">Rest fully.</em></h1>
+          <p class="detail-lede" data-i18n="detail.description">Focus Flow is a calm Pomodoro timer built around cozy places, flexible sessions, and little rituals that help you stay present.</p>
+          <div class="detail-actions">
+            <a class="primary-link" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener"><span data-i18n="detail.download">View on the App Store</span><span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="secondary-link" href="/focus-flow/support/" data-i18n="detail.support">Get support</a>
+          </div>
+          <p class="detail-note" data-i18n="detail.devices">Made for iPhone and iPad.</p>
+        </div>
+        <div class="detail-art" aria-label="Focus Flow app preview" data-i18n-aria="alt.preview" data-reveal>
+          <div class="detail-art-orbit" aria-hidden="true" data-parallax="0.1"></div>
+          <div class="detail-device" data-parallax="0.035"><img src="/assets/focus-flow-preview.jpg" alt="Focus Flow timer in the quiet carriage scene." data-i18n-alt="alt.preview"></div>
+          <div class="detail-app-icon" data-parallax="0.08"><img src="/assets/focus-flow-icon.png" alt="Focus Flow app icon"></div>
+        </div>
+      </section>
+      <p class="detail-scroll-hint"><span class="scroll-rule" aria-hidden="true"></span><span class="scroll-label" data-i18n="detail.scroll">Scroll to explore</span><span class="scroll-rule" aria-hidden="true"></span></p>
+
+      <section class="detail-section" aria-labelledby="rhythm-title">
+        <div class="detail-section-heading" data-reveal>
+          <div>
+            <p class="eyebrow" data-i18n="detail.rhythmKicker">A rhythm that feels like yours</p>
+            <h2 id="rhythm-title" data-i18n="detail.rhythmTitle">A little structure.<br>A lot more ease.</h2>
+          </div>
+          <p data-i18n="detail.rhythmDescription">Bring a clear beginning and a soft landing to your day, with the freedom to make each session fit the way you work.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal><span class="feature-index">01</span><h3 data-i18n="detail.feature1Title">Find your pace</h3><p data-i18n="detail.feature1Body">Choose focus and break lengths, then shape how many rounds make a good session.</p></article>
+          <article class="feature-card" data-reveal><span class="feature-index">02</span><h3 data-i18n="detail.feature2Title">Pick a place</h3><p data-i18n="detail.feature2Body">Settle into the carriage, the conservatory, or the pond. Each one has its own mood.</p></article>
+          <article class="feature-card" data-reveal><span class="feature-index">03</span><h3 data-i18n="detail.feature3Title">Make it yours</h3><p data-i18n="detail.feature3Body">Mix gentle ambient sounds, choose a companion, and see your recent focus at a glance.</p></article>
+        </div>
+      </section>
+
+      <section class="detail-section" aria-labelledby="worlds-title">
+        <div class="detail-section-heading" data-reveal>
+          <div><p class="eyebrow" data-i18n="detail.worldsKicker">Places to settle in</p><h2 id="worlds-title" data-i18n="detail.worldsTitle">A change of scene<br>can change the day.</h2></div>
+          <p data-i18n="detail.worldsDescription">A quiet room, soft light, and a tiny companion make it easier to return to what matters.</p>
+        </div>
+        <div class="world-grid">
+          <article class="world-card" data-reveal>
+            <div class="world-copy"><h3 data-i18n="detail.carriageTitle">The quiet carriage</h3><p data-i18n="detail.carriageBody">A window seat, a warm drink, and a fox curled up nearby.</p></div>
+            <div class="world-art" data-parallax="0.045"><img src="/assets/scenes/focus-flow-carriage.svg" alt="Illustrated quiet train carriage scene from Focus Flow." data-i18n-alt="alt.carriage" loading="lazy"></div>
+          </article>
+          <article class="world-card" data-reveal>
+            <div class="world-copy"><h3 data-i18n="detail.conservatoryTitle">The conservatory</h3><p data-i18n="detail.conservatoryBody">A leafy little corner that shifts gently with the daylight.</p></div>
+            <div class="world-art" data-parallax="0.06"><img src="/assets/scenes/focus-flow-conservatory.svg" alt="Illustrated conservatory scene from Focus Flow." data-i18n-alt="alt.conservatory" loading="lazy"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-section gallery-section" aria-labelledby="gallery-title">
+        <div class="detail-section-heading" data-reveal>
+          <div><p class="eyebrow" data-i18n="detail.galleryKicker">A closer look</p><h2 id="gallery-title" data-i18n="detail.galleryTitle">Little details.<br>Room to breathe.</h2></div>
+          <p data-i18n="detail.galleryDescription">Explore the timer, changing worlds, soundscape, and focus insights that make Focus Flow feel like a place of its own.</p>
+        </div>
+        <div class="shot-track">
+          <figure class="shot-card" data-reveal data-parallax="0.018"><div class="shot-frame"><img data-shot="1" src="/assets/focus-flow/shots/en/1.jpg" alt="Focus Flow app screenshot: cozy focus room." data-i18n-alt="alt.shot1" loading="lazy"></div><figcaption data-i18n="detail.shot1">Focus in a cozy room</figcaption></figure>
+          <figure class="shot-card" data-reveal data-parallax="0.024"><div class="shot-frame"><img data-shot="2" src="/assets/focus-flow/shots/en/2.jpg" alt="Focus Flow app screenshot: weather and daylight." data-i18n-alt="alt.shot2" loading="lazy"></div><figcaption data-i18n="detail.shot2">Follow your sky</figcaption></figure>
+          <figure class="shot-card" data-reveal data-parallax="0.018"><div class="shot-frame"><img data-shot="3" src="/assets/focus-flow/shots/en/3.jpg" alt="Focus Flow app screenshot: cozy worlds." data-i18n-alt="alt.shot3" loading="lazy"></div><figcaption data-i18n="detail.shot3">Calm worlds, one swipe away</figcaption></figure>
+          <figure class="shot-card" data-reveal data-parallax="0.024"><div class="shot-frame"><img data-shot="4" src="/assets/focus-flow/shots/en/4.jpg" alt="Focus Flow app screenshot: customizable soundscape." data-i18n-alt="alt.shot4" loading="lazy"></div><figcaption data-i18n="detail.shot4">Sounds for deep focus</figcaption></figure>
+          <figure class="shot-card" data-reveal data-parallax="0.018"><div class="shot-frame"><img data-shot="5" src="/assets/focus-flow/shots/en/5.jpg" alt="Focus Flow app screenshot: focus progress and streaks." data-i18n-alt="alt.shot5" loading="lazy"></div><figcaption data-i18n="detail.shot5">Watch your progress grow</figcaption></figure>
+        </div>
+        <p class="gallery-hint" data-i18n="detail.galleryHint">Swipe or scroll to see every screen.</p>
+      </section>
+
+      <section class="final-cta" data-reveal aria-labelledby="final-title">
+        <h2 id="final-title" data-i18n="detail.finalTitle">Make a little room for focus.</h2>
+        <p data-i18n="detail.finalDescription">Start with one calm session. Your next small step is enough.</p>
+        <a class="primary-link" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener"><span data-i18n="detail.download">View on the App Store</span><span class="arrow" aria-hidden="true">↗</span></a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <span data-i18n="footer.copyright">© 2026 Mertcan Çezik</span>
+      <nav aria-label="Focus Flow links" data-i18n-aria="footer.label"><a href="/focus-flow/support/" data-i18n="footer.support">Support</a><a href="/focus-flow/privacy/" data-i18n="footer.privacy">Privacy</a><a href="/focus-flow/terms/" data-i18n="footer.terms">Terms</a></nav>
+    </footer>
+    <script src="/assets/site.js?v=scroll-scrub-2" defer></script>
   </body>
 </html>

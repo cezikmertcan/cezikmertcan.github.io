@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 50">
+<defs><clipPath id="sbBody"><path d="M13 21 C12 15 18 11 23 12.5 C29 14 34 18 37.5 23 C41.5 27.5 42 33 40 37 C37 41.5 31 43 26 42 C20 41 15 36 14 30 C13 26.5 13 23.5 13 21Z"/></clipPath></defs>
+<!-- Forked tail behind the body. -->
+<path d="M36 33 L56 43 L49.5 43.5 L54 48 L41 43.5 L35 39Z" fill="#1E615D" stroke="#24302A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M39 37 L51 44" stroke="#2F8C83" stroke-width="1.2" stroke-linecap="round"/>
+<!-- Long down-curved bill, base hidden under the head. -->
+<path d="M13.5 17.6 C9 17.6 4.6 20 2 25.5 C5.2 22.4 9.2 21.4 13.5 21.6Z" fill="#24302A" stroke="#24302A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<!-- One silhouette for head, neck and body. -->
+<path d="M13 21 C12 15 18 11 23 12.5 C29 14 34 18 37.5 23 C41.5 27.5 42 33 40 37 C37 41.5 31 43 26 42 C20 41 15 36 14 30 C13 26.5 13 23.5 13 21Z" fill="#2F8C83"/>
+<g clip-path="url(#sbBody)">
+<path d="M8 6 L34 6 L34 16 C27 19.5 18 21 8 21Z" fill="#2E6FA6"/>
+<path d="M13 8 C17 8 22 10 26 11" fill="none" stroke="#5FA0D2" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M8 22 C17 24 22 27 24.5 32 C26.5 37 29 41 30 48 L8 48Z" fill="#F08A3C"/>
+<path d="M15.5 25 C19 27 22 29 23.5 32" fill="none" stroke="#FFB46A" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M17 40 C24 44 34 43 41 38 L41 48 L14 48Z" fill="#C9652A" opacity=".85"/>
+<path d="M27 15 C31 16.5 34.5 19 37 22.5" fill="none" stroke="#57B7A8" stroke-width="1.8" stroke-linecap="round"/>
+</g>
+<path d="M13 21 C12 15 18 11 23 12.5 C29 14 34 18 37.5 23 C41.5 27.5 42 33 40 37 C37 41.5 31 43 26 42 C20 41 15 36 14 30 C13 26.5 13 23.5 13 21Z" fill="none" stroke="#24302A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<!-- Eye with a glint. -->
+<circle cx="17.5" cy="17.2" r="1.7" fill="#24302A"/>
+<circle cx="17" cy="16.6" r=".6" fill="#FFFFFF"/>
+<!-- Little feet gripping the lamp top. -->
+<path d="M26.5 41.5 L26 45 M26 45 l-2 1.2 M26 45 l2 1.2 M31.5 42 L31.5 45 M31.5 45 l-2 1.2 M31.5 45 l2 1.2" fill="none" stroke="#4B3B32" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

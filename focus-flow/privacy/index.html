@@ -1,35 +1,34 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Focus Flow privacy policy</title>
-    <meta name="description" content="How Focus Flow handles local timer data, photos, notifications, and purchases.">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0d1917">
+    <title data-title="privacy">Focus Flow Privacy Policy</title>
+    <meta name="description" data-description="privacy" content="How Focus Flow handles local timer data, photos, notifications, and purchases.">
+    <link rel="icon" type="image/png" href="/assets/focus-flow-icon.png"><link rel="stylesheet" href="/assets/site.css">
   </head>
-  <body>
-    <main class="shell document">
-      <p class="eyebrow">Focus Flow</p>
-      <h1>Privacy policy</h1>
-      <p class="muted">Policy version: 1.0 · Last updated: 15 September 2026</p>
-
-      <p>Focus Flow is a Pomodoro timer published by Mertcan Çezik. It does not require an account, registration, or login.</p>
-
-      <h2>Data stored on the device</h2>
-      <p>Focus Flow stores timer snapshots, preferences, the selected focus companion, and completed focus-session history on your device. The app does not provide cloud sync. Device or platform backup behavior is controlled by the operating system. The app does not run advertising or behavioral analytics.</p>
-      <p>If you allow notifications, Focus Flow schedules local phase-end reminders on your device. Notification permission can be declined in the operating system; the app does not send data to a remote notification service.</p>
-      <p>When you choose <strong>Take snapshot</strong>, Focus Flow asks for permission to add the generated image to your photo library. The image stays on your device and is not uploaded by Focus Flow.</p>
-
-      <h2>Purchases</h2>
-      <p>When Pro purchases are enabled, Focus Flow connects to Apple App Store or Google Play and its purchase service to load offerings, complete purchases, restore purchases, and read entitlement status. The store and purchase service process an anonymous app installation identifier and purchase history for entitlement delivery and purchase analytics. Focus Flow does not ask for or store your name, email address, or payment details.</p>
-      <p>Purchase records remain managed by the store account. Refunds and billing disputes are handled by the store that processed the transaction.</p>
-
-      <h2>Retention and deletion</h2>
-      <p>Local timer data is removed when the app is uninstalled or its app data is cleared. Store purchase records are managed separately by Apple or Google. Because Focus Flow does not require an account, there is no profile to delete.</p>
-
-      <h2>Contact</h2>
-      <p>For questions about this policy, <a href="/focus-flow/support/">contact Focus Flow support</a>.</p>
-      <p class="back"><a href="/focus-flow/">← Focus Flow</a></p>
-    </main>
+  <body data-page="privacy">
+    <header class="site-header"><div class="header-inner">
+      <a class="brand" href="/" aria-label="Mertcan Çezik home" data-i18n-aria="ui.brandLabel"><img src="/assets/focus-flow-icon.png" alt=""><span>Mertcan Çezik</span></a>
+      <div class="header-right">
+        <nav class="top-nav" aria-label="Main navigation" data-i18n-aria="ui.navLabel"><a href="/" data-i18n="nav.home">All apps</a><a href="/focus-flow/" data-i18n="nav.focus">Focus Flow</a><a class="nav-download" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener" data-i18n="nav.download">App Store ↗</a></nav>
+        <div class="site-tools"><label class="sr-only" id="language-select-label" for="language-select" data-i18n="ui.languageLabel">Choose language</label><select class="language-picker" id="language-select" data-language-picker aria-labelledby="language-select-label"><option value="en">EN</option><option value="tr">TR</option><option value="es">ES</option><option value="fr">FR</option><option value="pt">PT</option></select>
+          <div class="theme-switch" role="group" aria-label="Color theme" data-i18n-aria="ui.themeLabel">
+            <button class="theme-option" type="button" data-theme-choice="light" aria-label="Light mode" data-i18n-aria="ui.lightMode" aria-pressed="false" title="Light mode" data-i18n-title="ui.lightMode"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6 16 16M16 4l-1.4 1.4M5.4 14.6 4 16"/></svg><span data-i18n="ui.light">Light</span></button>
+            <button class="theme-option" type="button" data-theme-choice="dark" aria-label="Dark mode" data-i18n-aria="ui.darkMode" aria-pressed="true" title="Dark mode" data-i18n-title="ui.darkMode"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.6 12.8A7.2 7.2 0 0 1 7.2 3.4a7.4 7.4 0 1 0 9.4 9.4Z"/></svg><span data-i18n="ui.dark">Dark</span></button>
+          </div>
+        </div>
+      </div>
+    </div></header>
+    <main class="document-shell"><article class="document-card">
+      <p class="eyebrow">Focus Flow</p><h1 data-i18n="privacy.title">Privacy policy</h1><p class="document-meta" data-i18n="privacy.meta">Policy version: 1.0 · Last updated: 15 September 2026</p>
+      <p data-i18n="privacy.intro">Focus Flow is a Pomodoro timer published by Mertcan Çezik. It does not require an account, registration, or login.</p>
+      <h2 data-i18n="privacy.deviceHeading">Data stored on your device</h2><p data-i18n="privacy.device1">Focus Flow stores timer snapshots, preferences, your selected focus companion, and completed session history on your device. The app has no cloud sync and runs no ads or behavioral analytics. Device backup is controlled by your operating system.</p><p data-i18n="privacy.device2">If you allow notifications, Focus Flow schedules local phase-end reminders on your device. It does not send data to a remote notification service.</p><p data-i18n="privacy.device3">When you choose Take snapshot, Focus Flow asks to add the generated image to your photo library. The image stays on your device and is not uploaded by Focus Flow.</p>
+      <h2 data-i18n="privacy.purchaseHeading">Purchases</h2><p data-i18n="privacy.purchase1">When Pro purchases are enabled, Focus Flow connects to Apple App Store or Google Play and its purchase service to load offerings, complete or restore purchases, and check Pro access. The store and purchase service process an anonymous app installation identifier and purchase history for entitlement delivery and purchase analytics. Focus Flow does not ask for or store your name, email address, or payment details.</p><p data-i18n="privacy.purchase2">Purchase records remain managed by the store account. Refunds and billing disputes are handled by the store that processed the transaction.</p>
+      <h2 data-i18n="privacy.retentionHeading">Retention and deletion</h2><p data-i18n="privacy.retention">Local timer data is removed when you uninstall the app or clear its app data. Store purchase records are managed separately by Apple or Google. Because Focus Flow has no account, there is no profile to delete.</p>
+      <h2 data-i18n="privacy.contactHeading">Contact</h2><p><span data-i18n="privacy.contact">For questions about this policy, contact Focus Flow support.</span> <a href="/focus-flow/support/" data-i18n="privacy.supportLink">contact Focus Flow support</a>.</p>
+      <a class="document-return" href="/focus-flow/" data-i18n="privacy.back">← Focus Flow</a>
+    </article></main>
+    <footer class="site-footer"><span data-i18n="footer.copyright">© 2026 Mertcan Çezik</span><nav aria-label="Focus Flow links" data-i18n-aria="footer.label"><a href="/focus-flow/support/" data-i18n="footer.support">Support</a><a href="/focus-flow/privacy/" data-i18n="footer.privacy">Privacy</a><a href="/focus-flow/terms/" data-i18n="footer.terms">Terms</a></nav></footer>
+    <script src="/assets/site.js" defer></script>
   </body>
 </html>

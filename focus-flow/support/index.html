@@ -1,28 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Focus Flow support</title>
-    <meta name="description" content="Get help with Focus Flow, including timer and purchase issues.">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0d1917">
+    <title data-title="support">Focus Flow Support</title>
+    <meta name="description" data-description="support" content="Get help with Focus Flow, including timer and purchase issues.">
+    <link rel="icon" type="image/png" href="/assets/focus-flow-icon.png"><link rel="stylesheet" href="/assets/site.css">
   </head>
-  <body>
-    <main class="shell document">
-      <p class="eyebrow">Focus Flow</p>
-      <h1>Support</h1>
-      <p class="muted">Support page v1.0 · Updated 16 September 2026 · Published by Mertcan Çezik.</p>
-      <p>If Focus Flow is not working as expected, email <a href="mailto:cezikmertcan@gmail.com?subject=Focus%20Flow%20support">cezikmertcan@gmail.com</a>.</p>
-      <p><a class="button" href="mailto:cezikmertcan@gmail.com?subject=Focus%20Flow%20support">Email support</a></p>
-      <h2>What to include</h2>
-      <ul>
-        <li>App version and device model.</li>
-        <li>iOS version and whether notifications are allowed.</li>
-        <li>Steps to reproduce the issue.</li>
-        <li>For a Pro purchase issue, whether the purchase or Restore purchases action was used.</li>
+  <body data-page="support">
+    <header class="site-header"><div class="header-inner">
+      <a class="brand" href="/" aria-label="Mertcan Çezik home" data-i18n-aria="ui.brandLabel"><img src="/assets/focus-flow-icon.png" alt=""><span>Mertcan Çezik</span></a>
+      <div class="header-right">
+        <nav class="top-nav" aria-label="Main navigation" data-i18n-aria="ui.navLabel"><a href="/" data-i18n="nav.home">All apps</a><a href="/focus-flow/" data-i18n="nav.focus">Focus Flow</a><a class="nav-download" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener" data-i18n="nav.download">App Store ↗</a></nav>
+        <div class="site-tools"><label class="sr-only" id="language-select-label" for="language-select" data-i18n="ui.languageLabel">Choose language</label><select class="language-picker" id="language-select" data-language-picker aria-labelledby="language-select-label"><option value="en">EN</option><option value="tr">TR</option><option value="es">ES</option><option value="fr">FR</option><option value="pt">PT</option></select>
+          <div class="theme-switch" role="group" aria-label="Color theme" data-i18n-aria="ui.themeLabel">
+            <button class="theme-option" type="button" data-theme-choice="light" aria-label="Light mode" data-i18n-aria="ui.lightMode" aria-pressed="false" title="Light mode" data-i18n-title="ui.lightMode"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6 16 16M16 4l-1.4 1.4M5.4 14.6 4 16"/></svg><span data-i18n="ui.light">Light</span></button>
+            <button class="theme-option" type="button" data-theme-choice="dark" aria-label="Dark mode" data-i18n-aria="ui.darkMode" aria-pressed="true" title="Dark mode" data-i18n-title="ui.darkMode"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.6 12.8A7.2 7.2 0 0 1 7.2 3.4a7.4 7.4 0 1 0 9.4 9.4Z"/></svg><span data-i18n="ui.dark">Dark</span></button>
+          </div>
+        </div>
+      </div>
+    </div></header>
+    <main class="document-shell"><article class="document-card">
+      <p class="eyebrow">Focus Flow</p><h1 data-i18n="support.title">Support</h1><p class="document-meta" data-i18n="support.meta">Support · Updated 16 September 2026 · Published by Mertcan Çezik.</p>
+      <p data-i18n="support.intro">If Focus Flow is not working as expected, email us. Include the app version, device, and a short description of the issue.</p>
+      <a class="document-email" href="mailto:cezikmertcan@gmail.com?subject=Focus%20Flow%20support" data-i18n="support.email">Email support</a>
+      <h2 data-i18n="support.what">What to include</h2><ul>
+        <li data-i18n="support.app">App version and device model.</li><li data-i18n="support.os">Operating system version and whether notifications are allowed.</li><li data-i18n="support.steps">Steps to reproduce the issue.</li><li data-i18n="support.purchase">For a Pro purchase issue, say whether it concerns a purchase or Restore purchases.</li>
       </ul>
-      <p>Please do not include payment details, passwords, or store credentials.</p>
-      <p class="back"><a href="/focus-flow/">← Focus Flow</a></p>
-    </main>
+      <p data-i18n="support.noSecrets">Please do not include payment details, passwords, or store credentials.</p>
+      <a class="document-return" href="/focus-flow/" data-i18n="support.back">← Focus Flow</a>
+    </article></main>
+    <footer class="site-footer"><span data-i18n="footer.copyright">© 2026 Mertcan Çezik</span><nav aria-label="Focus Flow links" data-i18n-aria="footer.label"><a href="/focus-flow/support/" data-i18n="footer.support">Support</a><a href="/focus-flow/privacy/" data-i18n="footer.privacy">Privacy</a><a href="/focus-flow/terms/" data-i18n="footer.terms">Terms</a></nav></footer>
+    <script src="/assets/site.js" defer></script>
   </body>
 </html>

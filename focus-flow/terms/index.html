@@ -1,24 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Focus Flow terms of use</title>
-    <meta name="description" content="Terms of use for Focus Flow.">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0d1917">
+    <title data-title="terms">Focus Flow Terms of Use</title>
+    <meta name="description" data-description="terms" content="Terms of use for Focus Flow.">
+    <link rel="icon" type="image/png" href="/assets/focus-flow-icon.png"><link rel="stylesheet" href="/assets/site.css">
   </head>
-  <body>
-    <main class="shell document">
-      <p class="eyebrow">Focus Flow</p>
-      <h1>Terms of use</h1>
-      <p class="muted">Terms version: 1.0 · Last updated: 15 September 2026</p>
-
-      <p>Focus Flow is published by Mertcan Çezik and provided as a productivity timer for personal use. The app is provided as-is; timer background execution, notifications, or phase changes must not be treated as a guarantee for safety-critical work.</p>
-      <p>Focus Flow does not require an account. Optional Pro features are purchased once through Apple App Store or Google Play. The price and applicable taxes are shown by the relevant store before purchase.</p>
-      <p>The Pro purchase does not renew. Use Restore purchases in Focus Flow when moving to another device with the same store account.</p>
-      <p>Refunds, billing disputes, and payment details are handled by the store that processed the transaction. By purchasing Pro, you agree to the applicable store terms and the purchase details shown at checkout.</p>
-      <p>For help, <a href="/focus-flow/support/">contact Focus Flow support</a>.</p>
-      <p class="back"><a href="/focus-flow/">← Focus Flow</a></p>
-    </main>
+  <body data-page="terms">
+    <header class="site-header"><div class="header-inner">
+      <a class="brand" href="/" aria-label="Mertcan Çezik home" data-i18n-aria="ui.brandLabel"><img src="/assets/focus-flow-icon.png" alt=""><span>Mertcan Çezik</span></a>
+      <div class="header-right">
+        <nav class="top-nav" aria-label="Main navigation" data-i18n-aria="ui.navLabel"><a href="/" data-i18n="nav.home">All apps</a><a href="/focus-flow/" data-i18n="nav.focus">Focus Flow</a><a class="nav-download" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener" data-i18n="nav.download">App Store ↗</a></nav>
+        <div class="site-tools"><label class="sr-only" id="language-select-label" for="language-select" data-i18n="ui.languageLabel">Choose language</label><select class="language-picker" id="language-select" data-language-picker aria-labelledby="language-select-label"><option value="en">EN</option><option value="tr">TR</option><option value="es">ES</option><option value="fr">FR</option><option value="pt">PT</option></select>
+          <div class="theme-switch" role="group" aria-label="Color theme" data-i18n-aria="ui.themeLabel">
+            <button class="theme-option" type="button" data-theme-choice="light" aria-label="Light mode" data-i18n-aria="ui.lightMode" aria-pressed="false" title="Light mode" data-i18n-title="ui.lightMode"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6 16 16M16 4l-1.4 1.4M5.4 14.6 4 16"/></svg><span data-i18n="ui.light">Light</span></button>
+            <button class="theme-option" type="button" data-theme-choice="dark" aria-label="Dark mode" data-i18n-aria="ui.darkMode" aria-pressed="true" title="Dark mode" data-i18n-title="ui.darkMode"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.6 12.8A7.2 7.2 0 0 1 7.2 3.4a7.4 7.4 0 1 0 9.4 9.4Z"/></svg><span data-i18n="ui.dark">Dark</span></button>
+          </div>
+        </div>
+      </div>
+    </div></header>
+    <main class="document-shell"><article class="document-card">
+      <p class="eyebrow">Focus Flow</p><h1 data-i18n="terms.title">Terms of use</h1><p class="document-meta" data-i18n="terms.meta">Terms version: 1.0 · Last updated: 15 September 2026</p>
+      <p data-i18n="terms.p1">Focus Flow is published by Mertcan Çezik and provided as a productivity timer for personal use. The app is provided as-is; timer background execution, notifications, or phase changes are not guaranteed for safety-critical work.</p><p data-i18n="terms.p2">Focus Flow does not require an account. Optional Pro features are purchased through Apple App Store or Google Play. The relevant store shows the price and applicable taxes before purchase.</p><p data-i18n="terms.p3">A lifetime Pro purchase is a one-time payment and does not renew. Use Restore purchases when moving to another device with the same store account. Subscription plans renew automatically until cancelled in your store settings.</p><p data-i18n="terms.p4">Refunds, billing disputes, and payment details are handled by the store that processed the transaction. By purchasing Pro, you agree to the applicable store terms and the purchase details shown at checkout.</p>
+      <p><span data-i18n="terms.p5">For help, contact Focus Flow support.</span> <a href="/focus-flow/support/" data-i18n="terms.supportLink">contact Focus Flow support</a>.</p>
+      <a class="document-return" href="/focus-flow/" data-i18n="terms.back">← Focus Flow</a>
+    </article></main>
+    <footer class="site-footer"><span data-i18n="footer.copyright">© 2026 Mertcan Çezik</span><nav aria-label="Focus Flow links" data-i18n-aria="footer.label"><a href="/focus-flow/support/" data-i18n="footer.support">Support</a><a href="/focus-flow/privacy/" data-i18n="footer.privacy">Privacy</a><a href="/focus-flow/terms/" data-i18n="footer.terms">Terms</a></nav></footer>
+    <script src="/assets/site.js" defer></script>
   </body>
 </html>

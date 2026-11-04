@@ -1,24 +1,96 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mertcan Çezik · Apps</title>
-    <meta name="description" content="Support and privacy information for apps published by Mertcan Çezik.">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <meta name="theme-color" content="#0d1917">
+    <title data-title="home">Focus Flow — Mertcan Çezik</title>
+    <meta name="description" data-description="home" content="Meet Focus Flow, a gentle Pomodoro timer with cozy scenes and a calmer rhythm for focused work.">
+    <meta property="og:title" content="Focus Flow — Find your focus. Keep your calm.">
+    <meta property="og:description" content="A gentle Pomodoro timer with cozy scenes and a calmer rhythm for focused work.">
+    <meta property="og:image" content="https://cezikmertcan.github.io/assets/focus-flow-icon.png">
+    <link rel="icon" type="image/png" href="/assets/focus-flow-icon.png">
+    <link rel="stylesheet" href="/assets/site.css">
+    <link rel="stylesheet" href="/assets/home.css">
   </head>
-  <body>
-    <main class="shell">
-      <p class="eyebrow">Apps</p>
-      <h1>Apps by Mertcan Çezik.</h1>
-      <p class="lede">Support and privacy information for the apps published by Mertcan Çezik.</p>
-      <a class="card" href="/focus-flow/">
-        <span>
-          <strong>Focus Flow</strong>
-          <small>A calm Pomodoro timer for focused work.</small>
-        </span>
-        <span aria-hidden="true">→</span>
-      </a>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="Mertcan Çezik home" data-i18n-aria="ui.brandLabel">
+          <img src="/assets/focus-flow-icon.png" alt="">
+          <span>Mertcan Çezik</span>
+        </a>
+        <div class="header-right">
+          <nav class="top-nav" aria-label="Main navigation" data-i18n-aria="ui.navLabel">
+            <a href="#featured" data-i18n="nav.collection">Collection</a>
+            <a class="nav-download" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener" data-i18n="nav.download">App Store ↗</a>
+          </nav>
+          <div class="site-tools">
+            <label class="sr-only" id="language-select-label" for="language-select" data-i18n="ui.languageLabel">Language</label>
+            <select class="language-picker" id="language-select" aria-labelledby="language-select-label" aria-label="Language" data-language-picker>
+              <option value="en">EN</option><option value="tr">TR</option><option value="es">ES</option><option value="fr">FR</option><option value="pt">PT</option>
+            </select>
+            <div class="theme-switch" role="group" aria-label="Color theme" data-i18n-aria="ui.themeLabel">
+              <button class="theme-option" type="button" data-theme-choice="light" aria-label="Light mode" data-i18n-aria="ui.lightMode" aria-pressed="false" title="Light mode" data-i18n-title="ui.lightMode">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6 16 16M16 4l-1.4 1.4M5.4 14.6 4 16"/></svg><span data-i18n="ui.light">Light</span>
+              </button>
+              <button class="theme-option" type="button" data-theme-choice="dark" aria-label="Dark mode" data-i18n-aria="ui.darkMode" aria-pressed="true" title="Dark mode" data-i18n-title="ui.darkMode">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.6 12.8A7.2 7.2 0 0 1 7.2 3.4a7.4 7.4 0 1 0 9.4 9.4Z"/></svg><span data-i18n="ui.dark">Dark</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell home-shell">
+      <section class="home-hero" aria-labelledby="home-title">
+        <div class="home-copy" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="home.kicker">A little more calm, every day</span></p>
+          <h1 id="home-title"><span data-i18n="home.title1">Find your focus.</span><br><em data-i18n="home.title2">Keep your calm.</em></h1>
+          <p class="home-description" data-i18n="home.description">A gentle Pomodoro timer with cozy scenes, small companions, and room to find your own rhythm.</p>
+          <div class="home-actions">
+            <a class="primary-link" href="/focus-flow/"><span data-i18n="home.meet">Meet Focus Flow</span><span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="secondary-link" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener" data-i18n="home.appStore">Download on the App Store</a>
+          </div>
+          <p class="home-footnote" data-i18n="home.footnote">Thoughtful tools for everyday routines.</p>
+        </div>
+
+        <div class="home-art" aria-label="Focus Flow preview" data-reveal>
+          <div class="home-ring" aria-hidden="true" data-parallax="0.1"></div>
+          <div class="home-phone" data-parallax="0.035"><img src="/assets/focus-flow-preview.jpg" alt="Focus Flow timer in a quiet carriage scene." data-i18n-alt="alt.preview"></div>
+          <div class="home-icon" data-parallax="0.08"><img src="/assets/focus-flow-icon.png" alt="Focus Flow app icon"></div>
+          <div class="home-note"><span class="home-note-mark" aria-hidden="true">✳</span><span><strong data-i18n="home.noteTitle">Focus, then rest.</strong><small data-i18n="home.noteBody">At your own pace.</small></span></div>
+        </div>
+      </section>
+
+      <section class="home-collection" id="featured" aria-labelledby="featured-title" data-reveal>
+        <div class="collection-heading">
+          <p class="eyebrow" data-i18n="home.collection">In the collection</p>
+          <span class="item-count">01 <span>/</span> 01</span>
+        </div>
+        <a class="home-app-card" href="/focus-flow/">
+          <div class="home-app-main">
+            <img class="home-app-icon" src="/assets/focus-flow-icon.png" alt="">
+            <div class="home-app-copy">
+              <p class="home-app-category" data-i18n="home.category">FOCUS TIMER <span>·</span> IOS</p>
+              <h2 id="featured-title">Focus Flow</h2>
+              <p data-i18n="home.cardDescription">Settle into focused work with a timer that feels like a quiet place to land.</p>
+            </div>
+          </div>
+          <span class="home-app-link"><span data-i18n="home.explore">Explore the app</span><span aria-hidden="true">↗</span></span>
+        </a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <span data-i18n="footer.copyright">© 2026 Mertcan Çezik</span>
+      <nav aria-label="Focus Flow links" data-i18n-aria="footer.label">
+        <a href="/focus-flow/support/" data-i18n="footer.support">Support</a>
+        <a href="/focus-flow/privacy/" data-i18n="footer.privacy">Privacy</a>
+        <a href="/focus-flow/terms/" data-i18n="footer.terms">Terms</a>
+      </nav>
+    </footer>
+    <script src="/assets/site.js" defer></script>
   </body>
 </html>
