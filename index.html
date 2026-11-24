@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0d1917">
-    <title data-title="home">Focus Flow — Mertcan Çezik</title>
-    <meta name="description" data-description="home" content="Meet Focus Flow, a gentle Pomodoro timer with cozy scenes and a calmer rhythm for focused work.">
-    <meta property="og:title" content="Focus Flow — Find your focus. Keep your calm.">
-    <meta property="og:description" content="A gentle Pomodoro timer with cozy scenes and a calmer rhythm for focused work.">
-    <meta property="og:image" content="https://cezikmertcan.github.io/assets/focus-flow-icon.png">
+    <title data-title="home">Mertcan Çezik — Small apps for everyday routines</title>
+    <meta name="description" data-description="home" content="Keyframe cleans up your photo gallery week by week. Focus Flow is a gentle Pomodoro timer. Small, private apps by Mertcan Çezik.">
+    <meta property="og:title" content="Keyframe — Clean up your gallery. Week by week.">
+    <meta property="og:description" content="Review one week of photos at a time, keep the best of every similar shot and clear the rest. Your photos stay on your phone.">
+    <meta property="og:image" content="https://cezikmertcan.github.io/assets/keyframe-icon.png">
     <link rel="icon" type="image/png" href="/assets/focus-flow-icon.png">
     <link rel="stylesheet" href="/assets/site.css">
     <link rel="stylesheet" href="/assets/home.css">
+    <link rel="stylesheet" href="/assets/keyframe.css">
   </head>
   <body data-page="home">
     <header class="site-header">
@@ -23,7 +24,8 @@
         <div class="header-right">
           <nav class="top-nav" aria-label="Main navigation" data-i18n-aria="ui.navLabel">
             <a href="#featured" data-i18n="nav.collection">Collection</a>
-            <a class="nav-download" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener" data-i18n="nav.download">App Store ↗</a>
+            <a href="/keyframe/" data-i18n="nav.keyframe">Keyframe</a>
+            <a href="/focus-flow/" data-i18n="nav.focus">Focus Flow</a>
           </nav>
           <div class="site-tools">
             <label class="sr-only" id="language-select-label" for="language-select" data-i18n="ui.languageLabel">Language</label>
@@ -44,31 +46,58 @@
     </header>
 
     <main class="page-shell home-shell">
-      <section class="home-hero" aria-labelledby="home-title">
+      <section class="home-hero kf-hero" aria-labelledby="home-title">
         <div class="home-copy" data-reveal>
-          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="home.kicker">A little more calm, every day</span></p>
-          <h1 id="home-title"><span data-i18n="home.title1">Find your focus.</span><br><em data-i18n="home.title2">Keep your calm.</em></h1>
-          <p class="home-description" data-i18n="home.description">A gentle Pomodoro timer with cozy scenes, small companions, and room to find your own rhythm.</p>
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="kfHome.kicker">New · Keyframe</span></p>
+          <h1 id="home-title"><span data-i18n="kfHome.title1">Clean up your gallery.</span><br><em data-i18n="kfHome.title2">Week by week.</em></h1>
+          <p class="home-description" data-i18n="kfHome.description">Review one week of photos at a time, keep the best of every similar shot and clear the rest in minutes.</p>
           <div class="home-actions">
-            <a class="primary-link" href="/focus-flow/"><span data-i18n="home.meet">Meet Focus Flow</span><span class="arrow" aria-hidden="true">↗</span></a>
-            <a class="secondary-link" href="https://apps.apple.com/app/id6805448127" target="_blank" rel="noopener" data-i18n="home.appStore">Download on the App Store</a>
+            <a class="primary-link" href="/keyframe/"><span data-i18n="kfHome.meet">Meet Keyframe</span><span class="arrow" aria-hidden="true">↗</span></a>
           </div>
-          <p class="home-footnote" data-i18n="home.footnote">Thoughtful tools for everyday routines.</p>
+          <p class="home-footnote" data-i18n="kfHome.footnote">Coming soon to the App Store.</p>
         </div>
 
-        <div class="home-art" aria-label="Focus Flow preview" data-reveal>
+        <div class="home-art" role="img" aria-label="Keyframe library" data-i18n-aria="kf.alt" data-reveal>
           <div class="home-ring" aria-hidden="true" data-parallax="0.1"></div>
-          <div class="home-phone" data-parallax="0.035"><img src="/assets/focus-flow-preview.jpg" alt="Focus Flow timer in a quiet carriage scene." data-i18n-alt="alt.preview"></div>
-          <div class="home-icon" data-parallax="0.08"><img src="/assets/focus-flow-icon.png" alt="Focus Flow app icon"></div>
-          <div class="home-note"><span class="home-note-mark" aria-hidden="true">✳</span><span><strong data-i18n="home.noteTitle">Focus, then rest.</strong><small data-i18n="home.noteBody">At your own pace.</small></span></div>
+          <div data-parallax="0.035"><div class="kf-phone" aria-hidden="true">
+            <p class="kf-phone-title">Keyframe<span>.</span></p>
+            <p class="kf-phone-chips"><span>All</span><span>Screenshots</span><span>Photos</span></p>
+            <p class="kf-week"><span>2026 · Week 47<span class="kf-play">▶</span></span><small>8 photos</small></p>
+            <div class="kf-grid"><span class="kf-tile"><img src="/assets/keyframe/photos/1.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/2.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/3.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/4.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/5.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/6.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/7.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/8.jpg" alt="" loading="lazy"></span></div>
+            <p class="kf-week"><span>2026 · Week 46<span class="kf-play">▶</span></span><small>8 photos</small></p>
+            <div class="kf-grid"><span class="kf-tile"><img src="/assets/keyframe/photos/9.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/10.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/11.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/12.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/13.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/14.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/15.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/16.jpg" alt="" loading="lazy"></span></div>
+            <p class="kf-week"><span>2026 · Week 45<span class="kf-play">▶</span></span><small>8 photos</small></p>
+            <div class="kf-grid"><span class="kf-tile"><img src="/assets/keyframe/photos/17.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/18.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/19.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/20.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/5.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/13.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/7.jpg" alt="" loading="lazy"></span><span class="kf-tile"><img src="/assets/keyframe/photos/16.jpg" alt="" loading="lazy"></span></div>
+            <div class="kf-start"><strong>Start review</strong><small>2026 · Week 47 · 8 photos</small></div>
+            <div class="kf-tabs"><span>Photos</span><span>Videos</span><span>Deleted</span><span>Settings</span></div>
+          </div></div>
+          <div class="home-icon kf-icon" data-parallax="0.08"><img src="/assets/keyframe-icon.png" alt="Keyframe app icon"></div>
+          <div class="kf-pick" aria-hidden="true">
+            <p class="kf-pick-title">Which photos do you want to keep?</p>
+            <div class="kf-pick-grid"><span class="kf-pick-photo is-keep"><img src="/assets/keyframe/photos/pick-1.jpg" alt="" loading="lazy"><b>✓ Keep</b></span><span class="kf-pick-photo"><img src="/assets/keyframe/photos/pick-2.jpg" alt="" loading="lazy"><b>Marked</b></span><span class="kf-pick-photo"><img src="/assets/keyframe/photos/pick-3.jpg" alt="" loading="lazy"><b>Marked</b></span><span class="kf-pick-photo"><img src="/assets/keyframe/photos/pick-4.jpg" alt="" loading="lazy"><b>Marked</b></span></div>
+            <span class="kf-pick-continue">Continue · Keep 1, mark 3</span>
+          </div>
+          <div class="home-note kf-note"><span class="home-note-mark" aria-hidden="true">✳</span><span><strong data-i18n="kfHome.noteTitle">Your photos stay on your phone.</strong><small data-i18n="kfHome.noteBody">No account. No uploads.</small></span></div>
         </div>
       </section>
 
       <section class="home-collection" id="featured" aria-labelledby="featured-title" data-reveal>
         <div class="collection-heading">
           <p class="eyebrow" data-i18n="home.collection">In the collection</p>
-          <span class="item-count">01 <span>/</span> 01</span>
+          <span class="item-count">02 <span>/</span> 02</span>
         </div>
+        <div class="home-app-list">
+        <a class="home-app-card" href="/keyframe/">
+          <div class="home-app-main">
+            <img class="home-app-icon" src="/assets/keyframe-icon.png" alt="">
+            <div class="home-app-copy">
+              <p class="home-app-category" data-i18n="kfHome.category">PHOTO CLEANER · IOS</p>
+              <h2>Keyframe</h2>
+              <p data-i18n="kfHome.cardDescription">Go through your gallery one week at a time and clear what you no longer need.</p>
+            </div>
+          </div>
+          <span class="home-app-link"><span data-i18n="home.explore">Explore the app</span><span aria-hidden="true">↗</span></span>
+        </a>
         <a class="home-app-card" href="/focus-flow/">
           <div class="home-app-main">
             <img class="home-app-icon" src="/assets/focus-flow-icon.png" alt="">
@@ -80,17 +109,28 @@
           </div>
           <span class="home-app-link"><span data-i18n="home.explore">Explore the app</span><span aria-hidden="true">↗</span></span>
         </a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <span data-i18n="footer.copyright">© 2026 Mertcan Çezik</span>
-      <nav aria-label="Focus Flow links" data-i18n-aria="footer.label">
-        <a href="/focus-flow/support/" data-i18n="footer.support">Support</a>
-        <a href="/focus-flow/privacy/" data-i18n="footer.privacy">Privacy</a>
-        <a href="/focus-flow/terms/" data-i18n="footer.terms">Terms</a>
-      </nav>
+      <div class="footer-groups">
+        <nav aria-label="Keyframe links" data-i18n-aria="footer.kfLabel">
+          <strong>Keyframe</strong>
+          <a href="/keyframe/support/" data-i18n="footer.support">Support</a>
+          <a href="/keyframe/privacy/" data-i18n="footer.privacy">Privacy</a>
+          <a href="/keyframe/terms/" data-i18n="footer.terms">Terms</a>
+        </nav>
+        <nav aria-label="Focus Flow links" data-i18n-aria="footer.ffLabel">
+          <strong>Focus Flow</strong>
+          <a href="/focus-flow/support/" data-i18n="footer.support">Support</a>
+          <a href="/focus-flow/privacy/" data-i18n="footer.privacy">Privacy</a>
+          <a href="/focus-flow/terms/" data-i18n="footer.terms">Terms</a>
+        </nav>
+      </div>
     </footer>
+    <script src="/assets/keyframe-copy.js" defer></script>
     <script src="/assets/site.js" defer></script>
   </body>
 </html>
